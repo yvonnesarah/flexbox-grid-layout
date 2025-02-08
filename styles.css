@@ -1,0 +1,56 @@
+/* Reset default margin, padding, and ensure box-sizing includes borders in element sizes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the body font, background color, and center align text */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Container layout using grid, ensuring it spans full viewport height */
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, content, footer layout */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Header styling with background color, padding, and larger font */
+header {
+    background: #ffcccb; /* Light red/pink background */
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Grid layout for displaying cards responsively */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+}
+
+/* Individual card styling */
+.card {
+    background: white; /* White background for contrast */
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Ensure images inside cards are responsive and have rounded corners */
+.card img {
+    max-width: 100%; /* Make sure images don't overflow */
+    border-radius: 10px;
+}
+
+/* Footer styling with background color and padding */
+footer {
+    background: #ffcccb; /* Light red/pink background */
+    padding: 10px;
+    font-size: 18px;
+}
